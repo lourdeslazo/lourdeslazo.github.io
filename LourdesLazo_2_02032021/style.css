@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   color: #000;
@@ -107,6 +111,7 @@ input {
   height: 24px;
   font: bold 1em "Raleway", sans-serif;
   margin: 0 -1px 0 -3px;
+  padding-left: 10px;
 }
 
 #search {
@@ -514,6 +519,7 @@ footer {
     top: 30px;
     width: auto;
     border-bottom: none;
+    padding-right: 0;
   }
 
   nav {
@@ -567,7 +573,7 @@ footer {
     display: block;
     position: absolute;
     background-color: #0065fc;
-    left: 160px;
+    left: 180px;
     top: 0;
     border: none;
     border-radius: 10px;
@@ -818,7 +824,6 @@ footer {
   }
 
   nav li {
-    width: 15%;
     margin-right: 0;
     text-align: center;
   }
@@ -858,7 +863,7 @@ footer {
     display: block;
     position: absolute;
     background-color: #0065fc;
-    left: 140px;
+    left: 165px;
     top: 0;
     border: none;
     border-radius: 10px;
@@ -1094,7 +1099,6 @@ footer {
 
   .popular {
     flex-direction: column;
-
     width: 180px;
     height: 150px;
   }
@@ -1239,13 +1243,11 @@ footer {
 
   .activitiessmall {
     margin-left: 0;
-
     width: 220px;
   }
 
   .activitiessmaller {
     margin-left: 0;
-
     width: 220px;
   }
 }
@@ -1253,6 +1255,14 @@ footer {
 /*Breakpoint 1200px-1360px*/
 
 @media all and (min-width: 1200px) and (max-width: 1360px) {
+  .sectiontitles {
+    padding-left: 50px;
+  }
+
+  #asidetitle {
+    padding: 0 40px;
+  }
+
   #titleactivities {
     padding-left: 0;
   }
@@ -1286,6 +1296,10 @@ footer {
     margin-left: 0;
     width: 270px;
   }
+
+  .footernav {
+    margin-left: 30px;
+  }
 }
 
 /*Breakpoint 1361px*/
@@ -1300,8 +1314,20 @@ footer {
     max-width: 1360px;
   }
 
+  .sectiontitles {
+    padding-left: 70px;
+  }
+
+  #asidetitle {
+    padding: 0 55px;
+  }
+
   footer {
     max-width: 1440px;
     margin: auto;
+  }
+
+  .footernav {
+    margin-left: 75px;
   }
 }
